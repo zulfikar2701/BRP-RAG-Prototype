@@ -1,6 +1,9 @@
 # VENV
 brp-rag-venv/
 
+#caching
+/map_cache*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

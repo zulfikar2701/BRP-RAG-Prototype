@@ -1,4 +1,13 @@
 openai
 langchain-community
-vllm
+vllm 
+transformers 
+sentence-transformers
 gptcache
+torch
+pymilvus[lite]>=2.5.0
+langchain-community
+pypdf
+numpy
+tqdm 
+rich

@@ -14,7 +14,7 @@ def answer(question, contexts):
     src_txt = ", ".join({c['entity']['source'] for c in contexts})
     prompt  = (
         f"Context: {ctx_txt}\nSources: {src_txt}\n\n"
-        f"User: {question}\nAssistant:"
+        f"User: (answer in a concise and clear style and *only* using Indonesian) {question}\nAssistant:"
     )
     out = _llm.generate([prompt], SamplingParams(
     temperature=0.2,

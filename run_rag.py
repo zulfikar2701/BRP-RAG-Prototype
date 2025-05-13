@@ -20,7 +20,7 @@ def main():
         print("✅ Ingested new PDFs.")
 
     # 2) Ask something
-    question = "When a bank decides to terminate the use of an IT service provider, what three actions must the bank take, according to the Use of IT Service Provider Policy?"
+    question = "When the Bank outsources supporting work (pekerjaan penunjang), what three criteria must that work satisfy?"
     hits = retrieve.fetch(question, top_k=4)
     print("Top chunks:", [h["entity"]["chunk"][:80] for h in hits])
 

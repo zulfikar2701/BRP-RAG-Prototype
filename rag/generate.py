@@ -16,5 +16,9 @@ def answer(question, contexts):
         f"Context: {ctx_txt}\nSources: {src_txt}\n\n"
         f"User: {question}\nAssistant:"
     )
-    out = _llm.generate([prompt], SamplingParams(temperature=0.2, top_p=0.95))
+    out = _llm.generate([prompt], SamplingParams(
+    temperature=0.2,
+    top_p=0.95,
+    max_tokens=512,     # default was 256 – bump to 512
+))
     return out[0].outputs[0].text.strip()

@@ -180,3 +180,4 @@ cython_debug/
 .pypirc
 milvus_demo.db
 .milvus_demo.db.lock
+repomix-output.xml

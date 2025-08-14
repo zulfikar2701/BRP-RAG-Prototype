@@ -29,7 +29,7 @@ with st.sidebar:
     )
 
 # ----------  main chat -------------------------------------------------------
-st.title("📄 RAG PROTOTYPE")
+st.title("📄 GenAI Prototype")
 
 if "chat" not in st.session_state:
     st.session_state.chat = []  # list of (role, msg)
